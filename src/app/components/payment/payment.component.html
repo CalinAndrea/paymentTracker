@@ -1,0 +1,15 @@
+
+ <div *ngIf="payments !== undefined || payments !== null">
+<table [border]="2">
+	<thead>
+		<th>Name</th>
+		<th>Color</th>
+	</thead>
+	<tbody>
+		<tr *ngFor="let payment of payments">
+			<td>{{payment.name}}</td>
+			<td>{{payment.amount}}</td>
+		</tr>
+	</tbody>
+</table>
+</div>
